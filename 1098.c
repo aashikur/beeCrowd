@@ -2,7 +2,7 @@
 
 int main()
 {
-    int cnt;
+    int cnt; // cnt
     for(float i = 0; i<=2.01 ; i=i+.2)
     {
         cnt = 1;
