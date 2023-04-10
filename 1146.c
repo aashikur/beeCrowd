@@ -11,7 +11,7 @@ int main()
             if(i<n) printf(" ");
 
         }
-        printf("\n");
+       if(n!=0) printf("\n");
     }
 
 
