@@ -8,13 +8,11 @@ int main()
     {
         printf("%d",a);
         if(i<n) printf(" ");
-
+        
         next = a + b;
         a = b;
         b = next;
-
-
-    }
+    } printf("\n");
 
 
 
