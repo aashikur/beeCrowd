@@ -1,24 +1,25 @@
 #include <stdio.h>
+#include<math.h>
 
 int main()
 {
-    int cnt; // cnt
-    for(float i = 0; i<=2.01 ; i=i+.2)
-    {
-        cnt = 1;
-        int t = 3;
-        while(t--)
-        {
-            if(i == 0 || i == 1 || i == 2)
-                printf("I=%.0lf J=%.0lf\n",i,cnt+i);
-            else
-                printf("I=%.1lf J=%.1lf\n",i,cnt+i);
-            cnt++;
+
+   for(float i = 0; i<=2; i=i+0.2){
+
+   if(i != (int)i && i )  {
+        printf("I=%.1f J=%.1f\n",i, 1.0+i);
+        printf("I=%.1f J=%.1f\n",i, 2.0+i);
+        printf("I=%.1f J=%.1f\n",i, 3.0+i);}
+    else {
+
+        printf("I=%d J=%d\n",(int)i, 1+(int)(i));
+        printf("I=%d J=%d\n",(int)i, 2+(int)(i));
+        printf("I=%d J=%d\n",(int)i, 3+(int)(i));  }
+
+   }
+        printf("I=%d J=%d\n",(int)2, 3);
+        printf("I=%d J=%d\n",(int)2, 4);
+        printf("I=%d J=%d\n",(int)3, 5);
         }
 
-    }
 
-
-
-    return 0;
-}
