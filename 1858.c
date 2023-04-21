@@ -4,25 +4,23 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main() 
 {
-    int T,N, nCnt = 0, ans = 1e9, Tth;
-    scanf("%d",&T);
-    while(T--)
-    {
-        cin >> N;
-        if(N != 0){
-            nCnt++;
-            if(ans > N) {
-                ans = N;
-                Tth = nCnt;
-            }
-        }
+    int i,N, slap, minSlap = 1e9, minIndex;
 
+    cin >> N;
+
+    for(i = 1; i<=N; i++)
+    {
+        cin >> slap;
+        if(slap < minSlap)
+        {
+            minSlap = slap;
+            minIndex = i;
+        }
     }
 
-    cout << Tth << "\n";
-
+    cout << minIndex<< "\n";
 
     return 0;
 }
